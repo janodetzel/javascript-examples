@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>08-syntax</title>
+  </head>
+  <body>
+    <script>
+      function multiply1(a ,b) {
+        return a * b
+      }
+
+      function multiply2(a ,b) {
+        return a * b;
+      }
+
+      var multiply3 = (a ,b) => {
+        return a * b
+      }
+
+      console.log(multiply1(1, 2))
+      console.log(multiply2(3, 4))
+      console.log(multiply3(5, 6))
+
+      var x = 5
+      var x = 4
+
+      function multiplyWithX(a) {
+        return a * x
+      }
+
+      console.log(multiplyWithX(1))
+
+      const y = 5
+      const y = 4
+
+      function multiplyWithY(a) {
+        return a * y
+      }
+
+      console.log(multiplyWithY(1))
+    </script>
+  </body>
+</html>

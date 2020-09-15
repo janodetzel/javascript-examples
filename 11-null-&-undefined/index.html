@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>11-null-&-undefined</title>
+  </head>
+  <body>
+    <script>
+      var a
+
+      if (!a) {
+        console.log('ping')
+      }
+
+      var b = {
+        name: 'Frank',
+        age: null
+      }
+
+      console.log(b.age)
+
+      if (!b.age) {
+        console.log('pong')
+      }
+    </script>
+  </body>
+</html>

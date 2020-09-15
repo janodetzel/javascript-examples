@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>09-loops</title>
+  </head>
+  <body>
+    <script>
+      for (var i = 0; i < 5; i++) {
+        console.log(i)
+      }
+
+      var j = 0
+
+      while (j < 5) {
+        console.log(j)
+        j = j + 1
+      }
+
+      var names = ["Frank", "Ben", "Jürgen", "Michael"]
+
+      names.forEach(function (name) {
+        console.log(name)
+      })
+
+      names.forEach((name) => {
+        console.log(name)
+      })
+
+      for (var k = 0; k < names.length; k++) {
+        console.log(names[k])
+      }
+
+      console.log(names[0])
+      console.log(names[1])
+      console.log(names[2])
+      console.log(names[3])
+
+    </script>
+  </body>
+</html>
