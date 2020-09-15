@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>14-var-vs-let</title>
+  </head>
+  <body>
+    <script>
+      if (true) {
+        var test1 = true
+        let test2 = true
+        let test1 = true
+        let test2; // SyntaxError: 'user' has already been declared
+      }
+
+      alert(test1)
+      // alert(test2) // does not exist
+    </script>
+  </body>
+</html>
