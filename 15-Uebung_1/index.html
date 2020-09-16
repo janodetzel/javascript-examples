@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>08-syntax</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      button {
+        background-color: #3dd28d;
+        padding: 1em 2em;
+        border-radius: 9999px;
+        border: 1px solid #3dd28d;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="">Namen Anzeigen</button>
+    <h1></h1>
+    <script>
+      var names = ["Frank", "Ben", "Torsten"];
+      var count = -1;
+
+      document.querySelector("button").onclick = () => {
+        document.querySelector("h1").textContent =
+          names[++count % names.length];
+      };
+    </script>
+  </body>
+</html>
